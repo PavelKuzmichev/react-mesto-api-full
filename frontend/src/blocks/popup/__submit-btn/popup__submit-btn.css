@@ -1,0 +1,18 @@
+.popup__submit-btn{
+    background-color: rgba(0, 0, 0);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    min-height: 50px;
+    color: #FFFFFF;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+}
+.popup__submit-btn:hover {
+    background-color: rgba(0, 0, 0, .8);
+
+}

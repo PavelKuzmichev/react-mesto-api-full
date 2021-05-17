@@ -1,0 +1,16 @@
+
+.popup__title-zoom{
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  width: 291px;
+  height: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0px auto auto 0px;
+  color: #FFFFFF;
+  background-color: transparent;
+}

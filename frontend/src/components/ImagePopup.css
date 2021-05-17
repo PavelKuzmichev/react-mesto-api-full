@@ -1,0 +1,9 @@
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_visible/popup_visible.css);
+@import url(../blocks/popup/__window/popup__window.css);
+@import url(../blocks/popup/__window-zoom/popup__window-zoom.css);
+@import url(../blocks/popup/_zoom/popup_zoom.css);
+@import url(../blocks/popup/__title-zoom/popup__title-zoom.css);
+@import url(../blocks/popup/__image-zoom/popup__image-zoom.css);
+@import url(../blocks/popup/__close-btn/popup__close-btn.css);
+@import url(../blocks/popup/__close-btn/_zoom-image/popup__close-btn_zoom-image.css);

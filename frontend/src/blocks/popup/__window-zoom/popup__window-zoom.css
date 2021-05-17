@@ -1,0 +1,13 @@
+.popup__window-zoom{
+  width: 816px;
+  height: 540px;
+  border-radius: 0px;
+  }
+@media screen and (max-width:930px){
+.popup__window-zoom {
+  width: 433px;
+  height: 540px;}} 
+@media screen and (max-width:540px){
+.popup__window-zoom {
+  width: 240px;
+  height: 299px;}} 

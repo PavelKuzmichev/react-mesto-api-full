@@ -1,0 +1,62 @@
+.profile__edit-avatar {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 120px;
+    padding: 0;
+    border: none;
+    border-radius: 90px;
+    z-index: 1;
+}
+@media screen and (max-width: 1008px) {
+    .profile__edit-avatar {
+        top: 20px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .profile__edit-avatar {
+        top: 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .profile__edit-avatar {
+        top: 18px;
+    }
+}
+@media screen and (max-width: 831px) {
+    .profile__edit-avatar {
+        top: 0;
+    }
+}
+@media screen and (max-width: 399px) {
+    .profile__edit-avatar {
+        left: 106px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .profile__edit-avatar {
+        left: 95px;
+    }
+    @media screen and (max-width: 340px) {
+        .profile__edit-avatar {
+            left: 89px;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .profile__edit-avatar {
+            left: 81px;
+        }
+    }
+}
+
+.profile__edit-avatar:hover {
+    cursor: pointer;
+    background-image: url(../../../images/avatarEdit.png);
+    background-color: black;
+    background-size: 26px 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}

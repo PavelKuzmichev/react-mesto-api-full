@@ -1,0 +1,5 @@
+@import url(../blocks/popup/__window_avatar/popup__window_avatar.css);
+@import url(../blocks/popup/__error/_area/popup__error_area_avatar.css);
+@import url(../blocks/popup/__submit-btn/_avatar/popup__submit-btn_avatar.css);
+@import url(../blocks/popup/__close-btn/_avatar/popup__close-btn_avatar.css);
+@import url(../blocks/popup/__input/_form/popup__input_form_avatar.css)

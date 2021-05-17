@@ -1,0 +1,11 @@
+.popup__image-zoom{
+  width: 100%;
+  height: 100%;  
+}
+@media screen and (max-width:930px){
+  .popup__image_zoom {
+      width: 433px;}}
+@media screen and (max-width:540px){
+  .popup__image_zoom {
+      width: 240px;
+      height: 299px;}} 

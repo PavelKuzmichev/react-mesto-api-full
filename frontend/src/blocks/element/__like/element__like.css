@@ -1,0 +1,18 @@
+.element__like {
+    position: absolute;
+    height: 18.13px;
+    width: 20.75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    background-image: url(../../../images/like.jpg);
+    border: none;
+    padding: 0;
+    bottom: 38px;
+    right: 22.24px;
+     }
+     .element__like:hover{
+        opacity: .5;
+    }

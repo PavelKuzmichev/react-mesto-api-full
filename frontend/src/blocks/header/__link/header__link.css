@@ -1,0 +1,32 @@
+.header__link {
+    text-decoration: none;
+    color: #fff;
+    align-self: flex-end;
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 24px;
+    margin-right: 30px;
+  }
+  .opacity:hover {
+    opacity: 0.6;
+    transition: opacity .5s linear;
+}
+  @media screen and (max-width: 760px) {
+    .header__link {
+      visibility: hidden;
+    }
+  }
+  
+  .header__link_visible {
+    visibility: visible;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+  @media screen and (max-width: 475px) {
+    .header__link_visible {
+      padding-bottom: 30px;
+      font-size: 14px;
+    }
+  }

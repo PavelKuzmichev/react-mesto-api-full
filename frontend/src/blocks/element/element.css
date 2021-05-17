@@ -1,0 +1,9 @@
+.element {
+    max-width: 282px;
+    justify-self: end;
+    background: #FFFFFF;
+    border-radius: 10px 10px;
+    min-height: 361px;
+    position: relative;}
+.element:nth-child(even) {
+    justify-self: start;}

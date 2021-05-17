@@ -1,0 +1,16 @@
+.element__likeSum {
+    position: absolute;
+    height: 23px;
+    width: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-size: 13px;
+    line-height: 16px;
+    outline: none;
+    margin: 0;
+    border: none;
+    padding: 0;
+    bottom: 17px;
+    right: 27px;
+     }
