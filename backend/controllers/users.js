@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { User } = require('../models/user');
 const DefaultError = require('../middlewares/defaultError');
+
 const { NODE_ENV, JWT_SECRET } = process.env;
 exports.getUsers = (req, res, next) => {
   User.find({})
@@ -56,7 +57,7 @@ exports.updateUser = (req, res, next) => {
     },
   )
     .then((userProfile) => {
-        res.status(200).send(userProfile)
+      res.status(200).send(userProfile);
     })
     .catch((err) => {
       if (err.name === 'ValidationError') {
@@ -66,7 +67,6 @@ exports.updateUser = (req, res, next) => {
       }
     })
     .catch(next);
-
 };
 exports.updateAvatar = (req, res, next) => {
   const { avatar } = req.body;
@@ -80,7 +80,7 @@ exports.updateAvatar = (req, res, next) => {
     },
   )
     .orFail(new Error('NotValidId'))
-    .then((user) => res.status(200).send( user ))
+    .then((user) => res.status(200).send(user))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         throw new DefaultError(400, 'Переданы некорректные данные');

@@ -12,7 +12,7 @@ const { auth } = require('./middlewares/auth');
 
 const app = express();
 app.use(cors({
-  origin: 'kuzpavel1985.nomoredomains.icu',
+  origin: 'http://localhost:3000',
   }));
 app.use(express.json());
 app.use(cookieParser());

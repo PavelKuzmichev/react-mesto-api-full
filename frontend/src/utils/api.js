@@ -111,7 +111,7 @@ export class Api {
     }
 }
 export const api = new Api({
-    url: "api.kuzpavel1985.nomoredomains.monster",
+    url: "https://api.kuzpavel1985.nomoredomains.monster",
     headers: {
           "Content-Type": "application/json",
     },

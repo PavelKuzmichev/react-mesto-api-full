@@ -3,7 +3,7 @@ const DefaultError = require('../middlewares/defaultError');
 
 exports.getCards = (req, res, next) => {
   Card.find({})
-    .then((card) => res.status(200).send( card ))
+    .then((card) => res.status(200).send(card))
     .catch(next);
 };
 exports.createCard = (req, res, next) => {
@@ -11,8 +11,8 @@ exports.createCard = (req, res, next) => {
 
   const { name, link } = req.body;
 
-  Card.create({ name, link, owner: req.user._id  })
-    .then((card) => res.status(200).send( card ))
+  Card.create({ name, link, owner: req.user._id })
+    .then((card) => res.status(200).send(card))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         throw new DefaultError(400, 'Переданы некорректные данные');
@@ -21,7 +21,7 @@ exports.createCard = (req, res, next) => {
     .catch(next);
 };
 exports.deleteCard = (req, res, next) => {
-    Card.findById(req.params.cardId)
+  Card.findById(req.params.cardId)
     .then((card) => {
       if (!card) {
         throw new DefaultError(404, 'Карточка не найдена');
@@ -41,9 +41,9 @@ exports.likeCard = (req, res, next) => {
   console.log(req.user._id);
   Card.findByIdAndUpdate(req.params.cardId, { $addToSet: { likes: req.user._id } }, { new: true })
     .orFail(new Error('NotValidId'))
-    .then((card) => res.status(200).send( card ))
+    .then((card) => res.status(200).send(card))
     .catch((err) => {
-        if (err.message === 'NotValidId') {
+      if (err.message === 'NotValidId') {
         throw new DefaultError(404, 'Карточка не найдена');
       } else if (err.kind === 'ObjectId') {
         throw new DefaultError(400, 'Нет карточки с таким id');
@@ -55,9 +55,9 @@ exports.dislikeCard = (req, res, next) => {
   console.log(req.user._id);
   Card.findByIdAndUpdate(req.params.cardId, { $pull: { likes: req.user._id } }, { new: true })
     .orFail(new Error('NotValidId'))
-    .then((card) => res.status(200).send( card ))
+    .then((card) => res.status(200).send(card))
     .catch((err) => {
-        if (err.message === 'NotValidId') {
+      if (err.message === 'NotValidId') {
         throw new DefaultError(404, 'Карточка не найдена');
       } else if (err.kind === 'ObjectId') {
         throw new DefaultError(400, 'Нет карточки с таким id');

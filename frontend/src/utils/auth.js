@@ -1,4 +1,4 @@
-export const BASE_URL = 'api.kuzpavel1985.nomoredomains.monster';
+export const BASE_URL = 'https://api.kuzpavel1985.nomoredomains.monster';
 
 export const authorize = (email, password) => {
   
