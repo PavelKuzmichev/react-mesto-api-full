@@ -11,9 +11,7 @@ const { routes } = require('./routes/index');
 const { auth } = require('./middlewares/auth');
 
 const app = express();
-app.use(cors({
-  origin: 'http://localhost:3000',
-  }));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 app.get('/crash-test', () => {
