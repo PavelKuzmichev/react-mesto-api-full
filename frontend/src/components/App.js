@@ -25,9 +25,7 @@ function App() {
     avatar: "",
     _id: "",
   });
-  React.useEffect(() => {
-    tokenCheck();
-      }, []);
+ 
   const [cards, setCards] = React.useState([]);
   
   function handleCardLike(card) {
@@ -202,6 +200,9 @@ function App() {
             console.log(err);
           });
       }}, [loggedIn]);
+      React.useEffect(() => {
+        tokenCheck();
+          }, []);
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="body">

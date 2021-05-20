@@ -11,7 +11,11 @@ const { routes } = require('./routes/index');
 const { auth } = require('./middlewares/auth');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: true,
+  exposedHeaders: '*',
+  credentials: true,
+}));
 app.use(express.json());
 app.use(cookieParser());
 app.get('/crash-test', () => {
